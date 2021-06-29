@@ -20,3 +20,7 @@ Permissionless:
 3. Open to all | Trust to everyone | High security
 4. Slow transactions | Harder scalability | Not energy efficient
 5. Digital identity | Voting | Fundraising
+
+
+Cryptos to research:
+1. Arweave | Proof of access
