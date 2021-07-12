@@ -103,5 +103,19 @@ It has following design goals:
 6. Internet of blockchains: Wants to create a place where blockchains can interact with eaach other, and no need for them to work in silos.
 7. Overcome "One coin to rule all" mentality: One coin to rule all means that a blockchain tries to accumulate all dApps in its main chain, forcing them to buy their coin.
 
-Tendermint: It is an implementation of BFT. It alone is not permissionless and needs to be made permissionless by introduction of 
+Tendermint: It is an implementation of BFT. It alone is not permissionless and needs to be made permissionless by introduction of slashing, delegation and finality. This is something, that they have achieved over time. When a given crypto talks about a lower transaction price, this is basically because the traffic in the network is really less, and this increases as one moves ahead. Thus, most of the transactions being talked about are in simulation networks.
+The point to note is that though eth had a transaction fee around 0.02$/tx when its size was same as ATOM, is almost similar to ATOM, but the thing is that atom supports much cheaper transactions because it is made for larger transactions/sec, unlike eth which is meant for only 15tx/sec. The reason for even having a transaction cost is to ensure that anyone malicious doesn't cloud the network with fraudulent transactions.
+
+CAP theorm: Higher consistency -> every node in the network always considers a single state. Higher Availability -> the number of transactions supported is really really fast. Higher partition tolerance -> It doesn't matter if the nodes go offline.
+
+Consistency plays a very important role, at least in the context of inter blockchain communication.
+IBC protocol - standardizes communication
+No pre-defined network topology
+2-way pegs via validators
+Peg-zones for non-IBC chains
+Hubs and zones
+Shared Security (later)
+
+IBC ensures that global state and finality is ensured.The entire IBC is possible via bridges(**PegZones**)
+Peg-Zone is a blockchain that implements IBC and its validators manage wallets on the Bitcoin blockchain.
 
